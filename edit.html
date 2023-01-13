@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Program 3</title>
+    </head>
+    <body>
+        <div  ng-init="showStudent()">
+            <p><span> </span> Edit Student</p>
+                <div >
+                    <form ng-submit="updateStudent()">    </div>
+                <div >
+                  USN:
+                  <input type="text"  id="name" ng-model="student.usn" value="student.usn">
+                </div>
+                <div >
+                  Name:
+                  <input type="text"  id="name" value="student.name" ng-model="student.name">
+                </div>
+                <div >
+                  Sex:
+                  <input type="text"  id="sex" value="student.sex" ng-model="student.sex">
+                </div>
+                <div >
+                  Department:
+                  <input type="text"  id="dept" ng-model="student.dept" value="student.dept">
+                </div>
+                <div >
+                    Semester:
+                    <input type="text"  id="semester" value="student.semester" ng- model="student.semester">
+                </div>
+                <div >
+                 College:
+                  <input type="text"  id="college" value="student.college" ng-model="student.college">
+                </div>    
+                <div >
+                  Contact No. :
+                  <input type="text"  id="contact" value="student.contact" ng-model="student.contact">
+                </div>
+                <button type="submit" style="color:#5bc0de;" >Update</button>
+                <a href="#/students" > Cancel</a>
+            </form>		
+                <div>
+            <div>
+            
+    </body>
+</html>
+

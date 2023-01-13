@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Program 3</title>
+    </head>
+    <body>
+        <div  ng-init="getStudents()">
+            <p >Students List</p>
+            <div >
+                <table >
+                    <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Department</th>
+                      <th>Semester</th>
+                      <th>College</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="student in students">
+                      <td>{{ student.name }}</td>
+                      <td>{{ student.dept }}</td>
+                      <td>{{ student.semester }}</td>
+                      <td> 
+                        <a href="#/students/{{student._id}}/show" > Show  </a>
+                        <a href="#/students/{{student._id}}/edit" ><span > </span> Edit  </a>
+            <a ng-click="deleteStudent(student._id)" ><span > </span> Delete </a>
+                      </td>
+                    </tr>
+                    </tbody>
+                </table>		
+            <div>
+        <div>
+        
+    </body>
+</html>
+
